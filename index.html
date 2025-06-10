@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz Cumple, Fer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="tenor-gif-embed" data-postid="16375894191246123323" data-share-method="host" data-aspect-ratio="1.16505" data-width="100%">
+      <a href="https://tenor.com/view/piske-and-usagi-gif-16375894191246123323">Piske And Usagi Sticker</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <h1>🎂 ¡FELIZ CUMPLEAÑOS! 🎉</h1>
+    <p>Hace 25 años nació el ser más bonito del universo (tú).</p>
+    <p>Eres y seguirás siendo alguien muy importante para mí.</p>
+    <p>Sé que estás rodeado de personas que te quieren, y de todo corazón deseo que te la pases muy bonito.</p>
+    <p>No he dejado de pensarte... y hoy, te extraño un poquito más.</p>
+    
+    <button id="boton-musica" onclick="iniciarMusica()">Reproducir ▶️</button>
+
+<audio id="musica" loop>
+  <source src="music/Bad Bunny (ft. The Marias) - Otro Atardecer (360 Visualizer)  Un Verano Sin Ti.mp3" type="audio/mpeg" />
+  Tu navegador no soporta la reproducción de audio.
+</audio>
+
+<script>
+  function iniciarMusica() {
+    const musica = document.getElementById("musica");
+    musica.play();
+    document.getElementById("boton-musica").style.display = "none"; // Oculta el botón después de iniciar la música
+  }
+</script>
+
+
+
+    <h2>Feliz cumpleaños, Fer 💖</h2>
+    <div class="galeria">
+      <img src="img/bebe.jpg" alt="Fer de bebé" />
+      <img src="img/atardecer.png" alt="Fer en el atardecer" />
+      <img src="img/moto.png" alt="Fer en moto" />
+      
+    </div>
+
+    <a href="cine.html">
+      <button class="boton-sorpresa">¡Abrir regalo! 🎁</button>
+    </a>
+
+  </div>
+</body>
+</html>

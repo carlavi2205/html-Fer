@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Un regalo para ti...</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Vista del regalo -->
+    <div id="sorpresa">
+      <h1 id="texto-regalo">🎁 Tengo algo para ti...</h1>
+      <div class="gift-box">
+        <div class="tenor-gif-embed" data-postid="12034017540936536558" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+          <a href="https://tenor.com/view/presents-gift-gifts-birthday-gift-present-gif-12034017540936536558">Presents Gift Sticker</a>
+        </div>
+      </div>
+      <p>(Haz clic el regalo)</p>
+    </div>
+
+    <!-- Vista de la invitación -->
+<div id="invitacion" style="display: none;">
+  <img src="img/cine.png" alt="Boletos de cine" class="imagen-cine" />
+  <h2>¿Te gustaría ir al cine conmigo a ver<br><em>Cómo entrenar a tu dragón</em>? 🐉</h2>
+  <div class="buttons">
+    <button onclick="respuestaSi()">Sí 🥰</button>
+    <button onclick="respuestaNo()">No 😢</button>
+  </div>
+  <p id="respuesta" class="carino"></p>
+</div>
+
+  </div>
+
+  <script async src="https://tenor.com/embed.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const textoRegalo = document.getElementById("texto-regalo");
+
+      textoRegalo.style.cursor = "pointer";
+
+      textoRegalo.addEventListener("click", function () {
+        // Oculta la primera parte
+        document.getElementById("sorpresa").style.display = "none";
+        // Muestra la invitación
+        document.getElementById("invitacion").style.display = "block";
+      });
+    });
+
+    function respuestaSi() {
+      document.getElementById("respuesta").textContent =
+        "¡Gracias por aceptar! Avísame para ponernos de acuerdo, yei. 🥳";
+    }
+
+    function respuestaNo() {
+      document.getElementById("respuesta").textContent =
+        "¿Seguro??? Me gustaría estar contigo 😢";
+    }
+  </script>
+</body>
+</html>
+

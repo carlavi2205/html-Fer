@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5fa;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #e75480;
+}
+
+.carino {
+  font-style: italic;
+  color: #7c4dff;
+}
+
+.boton-sorpresa,
+.buttons button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.boton-sorpresa:hover,
+.buttons button:hover {
+  background-color: #e75480;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.galeria img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.08);
+}
+
+.imagen-cine {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#boton-musica {
+  padding: 12px 28px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ff69b4, #e75480);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(231, 84, 128, 0.6);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+#boton-musica:hover {
+  background: linear-gradient(135deg, #e75480, #ff69b4);
+  transform: scale(1.05);
+}
